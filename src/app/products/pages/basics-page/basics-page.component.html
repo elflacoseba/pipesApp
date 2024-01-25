@@ -23,4 +23,35 @@
     </p-card>
   </div>
 
+  <div class="col-12 md:col-6 lg:col-6">
+    <p-card header="Fecha">
+      <ol>
+        <li> Fecha </li>
+        <li> Fecha | date </li>
+        <li> Fecha | date:'short'</li>
+        <li> Fecha | date:'long'</li>
+        <li> Fecha | date:'MMMM dd, yyyy'</li>
+      </ol>
+      <hr>
+      <ol>
+        <li> Fecha | date:'long':'GMT-3'</li>
+      </ol>
+    </p-card>
+  </div>
+
+  <div class="col-12 md:col-6 lg:col-6">
+    <p-card header="Fecha">
+      <ol>
+        <li> {{ customDate }} </li>
+        <li> {{ customDate | date }} </li>
+        <li> {{ customDate | date:'short' }} </li>
+        <li> {{ customDate | date:'long' }} </li>
+        <li> {{ customDate | date:'MMMM dd, yyyy' }} </li>
+      </ol>
+      <hr>
+      <ol>
+        <li> {{ customDate | date:'long':'GMT-5' }} </li>
+      </ol>
+    </p-card>
+  </div>
 </div>
