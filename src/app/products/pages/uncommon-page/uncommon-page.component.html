@@ -1,1 +1,63 @@
-<p>uncommon-page works!</p>
+<p-panel header="Pipes Básicos" class="p-3">
+  <p>
+    Pipes incluídos en Angular - Usuarlmente en el Common Module.
+  </p>
+</p-panel>
+
+<div class="grid mt-2">
+  <div class="col-12 md:col-6">
+    <p-card header="uppercase">
+      <p-fieldset legend="i18nSelect Pipe" [toggleable]="true">
+        <p>
+          Saludos {{ name }}, es un placer
+          {{ this.gender | i18nSelect:invitationMap }}
+          a nuestro evento.
+        </p>
+        <p-button
+          (click)="changeClient()"
+          label="Cambiar Persona">
+        </p-button>
+      </p-fieldset>
+    </p-card>
+  </div>
+
+  <div class="col-12 md:col-6">
+    <p-card header="uppercase">
+      <p-fieldset legend="i18nPlural Pipe" [toggleable]="true">
+
+      </p-fieldset>
+    </p-card>
+  </div>
+
+  <div class="col-12 md:col-6">
+    <p-card header="uppercase">
+      <p-fieldset legend="Slice Pipe" [toggleable]="true">
+
+      </p-fieldset>
+    </p-card>
+  </div>
+
+  <div class="col-12 md:col-6">
+    <p-card header="uppercase">
+      <p-fieldset legend="JSON Pipe" [toggleable]="true">
+
+      </p-fieldset>
+    </p-card>
+  </div>
+
+  <div class="col-12 md:col-6">
+    <p-card header="uppercase">
+      <p-fieldset legend="KeyValue Pipe" [toggleable]="true">
+
+      </p-fieldset>
+    </p-card>
+  </div>
+
+  <div class="col-12 md:col-6">
+    <p-card header="uppercase">
+      <p-fieldset legend="Async Pipe" [toggleable]="true">
+
+      </p-fieldset>
+    </p-card>
+  </div>
+</div>
