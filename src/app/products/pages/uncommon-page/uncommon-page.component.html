@@ -77,7 +77,9 @@
   <div class="col-12 md:col-6">
     <p-card header="uppercase">
       <p-fieldset legend="Async Pipe" [toggleable]="true">
+        <pre> {{ myObservableTimer | async }} </pre>
 
+        <pre> {{ promiseValue | async }} </pre>
       </p-fieldset>
     </p-card>
   </div>

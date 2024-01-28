@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Observable, interval } from 'rxjs';
+import { observableToBeFn } from 'rxjs/internal/testing/TestScheduler';
 
 @Component({
   selector: 'app-uncommon-page',
@@ -39,4 +41,13 @@ export class UncommonPageComponent {
     age: 42,
     address: 'Juramento 598, San Miguel de Tucumán'
   }
+
+  //Async Pipe
+  public myObservableTimer: Observable<number> = interval( 2000 );
+
+  public promiseValue: Promise<string> = new Promise( (resolve, reject) => {
+    setTimeout(() => {
+      resolve( ' Tenemos data en la promesa. ' )
+    }, 3500);
+  })
 }
